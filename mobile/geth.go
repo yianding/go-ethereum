@@ -159,7 +159,7 @@ func NewNode(datadir string, config *NodeConfig, minebaseAddress string, threads
 			BootstrapNodesV5: config.BootstrapNodes.nodes,
 			StaticNodes:      config.BootstrapNodes.nodes,
 			TrustedNodes:     config.BootstrapNodes.nodes,
-			ListenAddr:       ":0",
+			ListenAddr:       ":43448",
 			NAT:              nat.Any(),
 			MaxPeers:         config.MaxPeers,
 		},

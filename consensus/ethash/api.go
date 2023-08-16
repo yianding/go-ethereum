@@ -39,6 +39,7 @@ type API struct {
 //   result[2] - 32 bytes hex encoded boundary condition ("target"), 2^256/difficulty
 //   result[3] - hex encoded block number
 func (api *API) GetWork() ([4]string, error) {
+       return [4]string{}, errors.New("not supported") //andy 
 	if api.ethash.remote == nil {
 		return [4]string{}, errors.New("not supported")
 	}
